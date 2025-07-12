@@ -428,7 +428,9 @@ nav .fa-solid{
         margin-right: 20px;
     }
     /* ----------------------- */
-
+    .work img{
+        height: 320px;
+    }
     .layer{
         font-size: 12px;
     }
