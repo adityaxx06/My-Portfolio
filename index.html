@@ -6,46 +6,52 @@
     <title>My Porfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="pic.jpeg" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script
       src="https://kit.fontawesome.com/5f709fa141.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="header">
+    <div id="header" class="section">
       <div class="container">
-        <nav>
-          <img src="logo1.jpg" alt="logo" class="logo" />
-          <ul id="side-menu">
-            <li><a href="#header">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
 
+        <nav class="">
+          <img src="assets/logo1.jpg" alt="logo" class="logo hero-content" />
+          <ul id="side-menu">
+            <li><a href="#header" class="">HOME</a></li>
+            <li><a href="#about" class="">ABOUT</a></li>
+            <li><a href="#services" class="">SERVICES</a></li>
+            <li><a href="#portfolio" class="">PORTFOLIO</a></li>
+            <li><a href="#contact" class="">CONTACT</a></li>
+            
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <i class="fa-solid fa-bars hero-content" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="assets/hero.mp4" type="video/mp4">
+        </video>
+
+        <div class="header-text hero-content">
           <p>UI/UX DESIGNER</p>
           <h1>
             Hi, I'm <span>Aditya</span> Soni<br />
             From India
           </h1>
+          <a href="Resume.html" class="btn btn2">See Resume</a>
         </div>
-        <a href="Resume.html" class="btn btn2">See Resume</a>
       </div>
+      <a href="#about" class="scroll"><p>Scroll down</p></a>
     </div>
 
     <!-- about -->
-    <div id="about">
+    <div id="about" class="section">
       <div class="container">
         <div class="row">
-          <div class="about-col-1">
-            <img src="pic.jpeg" alt="picture" />
+          <div class="about-col-1 card">
+            <img src="assets/pic.jpeg" alt="picture" />
           </div>
-          <div class="about-col-2">
+          <div class="about-col-2 card">
             <h1 class="subtitle">About Me</h1>
             <p>
               Hi, I'm Aditya Soni, a passionate BCA student and self-taught frontend developer based in Bilaspur, C.G. I enjoy building clean, user-friendly websites and interfaces using technologies like HTML, CSS, JavaScript, and React. With a creative eye and a focus on user experience, I’ve developed multiple real-world projects, from business websites to personal portfolios. I'm also exploring UI/UX design and always eager to learn and grow in the tech space.
@@ -129,11 +135,11 @@
     </div>
 
     <!-- Services -->
-    <div id="services">
-      <div class="container">
+    <div id="services" class="section">
+      <div class="container section">
         <h1 class="subtitle">My Services</h1>
         <div class="services-list">
-          <div class="service-box">
+          <div class="service-box card">
             <i class="fa-solid fa-code"></i>
             <h2>Web Design</h2>
             <p>
@@ -144,7 +150,7 @@
             </p>
             <a href="#services" onclick="openModal('webModal')">Learn More</a>
           </div>
-          <div class="service-box">
+          <div class="service-box card">
             <i class="fa-solid fa-crop-simple"></i>
             <h2>UI/UX Design</h2>
             <p>
@@ -155,7 +161,7 @@
             </p>
             <a href="#services" onclick="openModal('uiuxModal')">Learn More</a>
           </div>
-          <div class="service-box">
+          <div class="service-box card">
             <i class="fa-brands fa-app-store-ios"></i>
             <h2>App Design</h2>
             <p>
@@ -171,7 +177,7 @@
     </div>
 
     <!-- Modals -->
-    <div class="modal" id="webModal">
+    <div class="modal card section" id="webModal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('webModal')">&times;</span>
         <h2>Web Design</h2>
@@ -190,7 +196,7 @@
       </div>
     </div>
 
-    <div class="modal" id="uiuxModal">
+    <div class="modal card" id="uiuxModal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('uiuxModal')">&times;</span>
         <h2>Web Design</h2>
@@ -208,7 +214,7 @@
       </div>
     </div>
 
-    <div class="modal" id="appModal">
+    <div class="modal card" id="appModal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('appModal')">&times;</span>
         <h2>Web Design</h2>
@@ -228,12 +234,12 @@
     </div>
 
     <!-- portfolio -->
-    <div id="portfolio">
+    <div id="portfolio" class="section">
       <div class="container">
-        <div class="subtitle">My work</div>
+        <div class="subtitle">My Work</div>
         <div class="work-list">
-          <div class="work">
-            <img src="social media pic.avif" alt="" />
+          <div class="work card">
+            <img src="assets/social media pic.avif" alt="" />
             <div class="layer">
               <h3>Social Media App</h3>
               <p>
@@ -244,20 +250,20 @@
               ></a>
             </div>
           </div>
-          <div class="work">
-            <img src="business pic.jpg" alt="" class="business"/>
+          <div class="work card">
+            <img src="assets/business pic.jpg" alt="" class="business"/>
             <div class="layer">
               <h3>Business website</h3>
               <p>
                 A professional and responsive website developed for a metal industry business to showcase their products, services, and contact details.The site features a clean layout, product sections, and inquiry forms to enhance the company’s online presence and customer engagement.
               </p>
-              <a href="#"
+              <a href="https://adityaxx06.github.io/Business-Website--BMI-/"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
-          <div class="work">
-            <img src="music pic.jpeg" alt="" />
+          <div class="work card">
+            <img src="assets/music pic.jpeg" alt="" />
             <div class="layer">
               <h3>Music App</h3>
               <p>
@@ -275,10 +281,10 @@
 
     <!-- contact  -->
 
-    <div id="contact">
+    <div id="contact" class="section">
       <div class="container">
         <div class="row">
-          <div class="contact-left">
+          <div class="contact-left card">
             <h1 class="subtitle">Contact Me</h1>
             <p><i class="fa-solid fa-envelope"></i>adisonii2004@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>+91 9598106365</p>
@@ -290,7 +296,7 @@
             </div>
             <a href="Aditya Soni - Resume.pdf" download class="btn btn2">Download CV</a>
           </div>
-          <div class="contact-right">
+          <div class="contact-right card">
             <form action="#" name="submit-to-google-sheet">
               <input
                 type="text"
@@ -320,8 +326,8 @@
       </div>
       <div class="copyright">
         <p>
-          Copyright ©2025 Aditya. Made with
-          <i class="fa-regular fa-heart"></i> by Aditya Soni
+          Copyright © 2025 All right Reserve
+          <!-- <i class="fa-regular fa-heart"></i> -->
         </p>
       </div>
     </div>
