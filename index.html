@@ -38,7 +38,7 @@
             Hi, I'm <span>Aditya</span> Soni<br />
             From India
           </h1>
-          <a href="Resume.html" class="btn btn2">See Resume</a>
+          <a href="Resume.html" class="btn btn2" title="Click to see CV">See Resume</a>
         </div>
       </div>
       <a href="#about" class="scroll"><p>Scroll down</p></a>
@@ -181,7 +181,7 @@
       <div class="modal-content">
         <span class="close" onclick="closeModal('webModal')">&times;</span>
         <h2>Web Design</h2>
-        <p>
+        <p>Title
            <br/>
           I build responsive, user-focused websites tailored to your goals —
           whether it's growing your brand, generating leads, or selling online.
@@ -199,7 +199,7 @@
     <div class="modal card" id="uiuxModal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('uiuxModal')">&times;</span>
-        <h2>Web Design</h2>
+        <h2>UI/UX Designing</h2>
         <h4>Designing Seamless and Intuitive User Experiences</h4>
         <p>
           UI/UX isn't just about good looks — it's about solving problems through design.
@@ -217,7 +217,7 @@
     <div class="modal card" id="appModal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('appModal')">&times;</span>
-        <h2>Web Design</h2>
+        <h2>App Designing</h2>
         <p>
           Crafting High-Impact Websites That Convert. <br />
           I build responsive, user-focused websites tailored to your goals —
@@ -241,11 +241,11 @@
           <div class="work card">
             <img src="assets/social media pic.avif" alt="" />
             <div class="layer">
-              <h3>Social Media App</h3>
+              <h3>Social LinkTree</h3>
               <p>
                A simple and interactive social media platform where users can create profiles, share posts, and connect with others. Designed with a clean UI and built using HTML, CSS, and JavaScript, this app focuses on smooth navigation and responsive design for a better user experience.
               </p>
-              <a href="#"
+              <a href="https://adityaxx06.github.io/My-LinkTree/"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -253,7 +253,7 @@
           <div class="work card">
             <img src="assets/business pic.jpg" alt="" class="business"/>
             <div class="layer">
-              <h3>Business website</h3>
+              <h3>Business Website</h3>
               <p>
                 A professional and responsive website developed for a metal industry business to showcase their products, services, and contact details.The site features a clean layout, product sections, and inquiry forms to enhance the company’s online presence and customer engagement.
               </p>
@@ -265,7 +265,7 @@
           <div class="work card">
             <img src="assets/music pic.jpeg" alt="" />
             <div class="layer">
-              <h3>Music App</h3>
+              <h3>Music Web Clone</h3>
               <p>
                 A sleek and minimal music web app inspired by Spotify. Users can browse, play, and pause tracks through a clean, responsive UI. Built using HTML, CSS, and JavaScript, this project focuses on smooth user interactions and a modern layout for an immersive music experience.
               </p>
@@ -285,9 +285,10 @@
       <div class="container">
         <div class="row">
           <div class="contact-left card">
+
             <h1 class="subtitle">Contact Me</h1>
-            <p><i class="fa-solid fa-envelope"></i>adisonii2004@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+91 9598106365</p>
+            <p><i class="fa-solid fa-envelope"></i><a href="mailto:adisonii2004@gmail,+.com" title="Click to send mail">adisonii2004@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i><a href="tel:919598106365" title="Click to call me">+91 9598106365</a></p>
             <div class="social-icons">
               <a href="#"><i class="fa-brands fa-facebook"></i></a>
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -296,28 +297,13 @@
             </div>
             <a href="Aditya Soni - Resume.pdf" download class="btn btn2">Download CV</a>
           </div>
+
           <div class="contact-right card">
+            
             <form action="#" name="submit-to-google-sheet">
-              <input
-                type="text"
-                name="Name"
-                id=""
-                placeholder="Your Name"
-                required
-              />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                id=""
-                placeholder="Your Message"
-                required
-              ></textarea>
+              <input type="text" name="Name" title="Fill your Name" placeholder="Your Name" required />
+              <input type="email" name="Email" title="Fill your Email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" id="" title="Fill your Message" placeholder="Your Message" required ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
             <span id="msg"></span>

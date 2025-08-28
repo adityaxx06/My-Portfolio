@@ -350,6 +350,9 @@ nav ul li a:hover::after{
 .contact-left p{
     margin-top: 30px;
 }
+.contact-left a{
+    color: white;
+}
 .contact-left p i{
     color: #ff0202;
     margin-right: 15px;

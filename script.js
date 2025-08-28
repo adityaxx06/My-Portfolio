@@ -35,9 +35,7 @@ e.preventDefault()
 msg.innerHTML = "Message Sent Successfully..!";
 fetch(scriptURL, { method: 'POST', body: new FormData(form)},form.reset())
     .then(response => {
-    setTimeout(function(){
-        msg.innerHTML = "";
-    },5000)
+    setTimeout(function(){msg.innerHTML = "";},5000) 
     
     })
     .catch(error => console.error('Error!', error.message))
