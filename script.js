@@ -65,3 +65,10 @@ window.onclick = function(event) {
 ScrollReveal().reveal('.section h2', { delay: 200, origin: 'top', distance: '30px', duration: 800 });
 ScrollReveal().reveal('.card', { interval: 200, origin: 'bottom', distance: '50px', duration: 800 });
 ScrollReveal().reveal('.hero-content', { delay: 300, origin: 'top', distance: '40px', duration: 1000 });
+
+// -Lazyloader------------
+window.addEventListener("load", () => {
+  const video = document.getElementById("bg-video");
+  video.load();
+  video.play();
+});

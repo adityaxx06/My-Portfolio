@@ -28,17 +28,17 @@
           </ul>
           <i class="fa-solid fa-bars hero-content" onclick="openmenu()"></i>
         </nav>
-        <video autoplay muted loop playsinline class="hero-video">
+        <video autoplay muted loop playsinline class="hero-video" id="bg-video">
           <source src="assets/hero.mp4" type="video/mp4">
         </video>
 
-        <div class="header-text hero-content">
-          <p>UI/UX DESIGNER</p>
+        <div class="header-text hero-content autoBlur2">
+          <p>WEB DESIGNER & DEVELOPER</p>
           <h1>
             Hi, I'm <span>Aditya</span> Soni<br />
             From India
           </h1>
-          <a href="Resume.html" class="btn btn2" title="Click to see CV">See Resume</a>
+          <a href="Resume.html" class="btn btn2" title="Click to see CV">Resume</a>
         </div>
       </div>
       <a href="#about" class="scroll"><p>Scroll down</p></a>
@@ -48,10 +48,10 @@
     <div id="about" class="section">
       <div class="container">
         <div class="row">
-          <div class="about-col-1 card">
-            <img src="assets/pic.jpeg" alt="picture" />
+          <div class="about-col-1 ">
+            <img src="assets/pic.jpeg" alt="picture" class="fadeUp"/>
           </div>
-          <div class="about-col-2 card">
+          <div class="about-col-2 fadeUp">
             <h1 class="subtitle">About Me</h1>
             <p>
               Hi, I'm Aditya Soni, a passionate BCA student and self-taught frontend developer based in Bilaspur, C.G. I enjoy building clean, user-friendly websites and interfaces using technologies like HTML, CSS, JavaScript, and React. With a creative eye and a focus on user experience, I’ve developed multiple real-world projects, from business websites to personal portfolios. I'm also exploring UI/UX design and always eager to learn and grow in the tech space.
@@ -137,9 +137,9 @@
     <!-- Services -->
     <div id="services" class="section">
       <div class="container section">
-        <h1 class="subtitle">My Services</h1>
+        <h1 class="subtitle card">My Services</h1>
         <div class="services-list">
-          <div class="service-box card">
+          <div class="service-box autoShow">
             <i class="fa-solid fa-code"></i>
             <h2>Web Design</h2>
             <p>
@@ -150,7 +150,7 @@
             </p>
             <a href="#services" onclick="openModal('webModal')">Learn More</a>
           </div>
-          <div class="service-box card">
+          <div class="service-box autoShow">
             <i class="fa-solid fa-crop-simple"></i>
             <h2>UI/UX Design</h2>
             <p>
@@ -161,7 +161,7 @@
             </p>
             <a href="#services" onclick="openModal('uiuxModal')">Learn More</a>
           </div>
-          <div class="service-box card">
+          <div class="service-box autoShow">
             <i class="fa-brands fa-app-store-ios"></i>
             <h2>App Design</h2>
             <p>
@@ -236,9 +236,9 @@
     <!-- portfolio -->
     <div id="portfolio" class="section">
       <div class="container">
-        <div class="subtitle">My Work</div>
+        <div class="subtitle card">My Work</div>
         <div class="work-list">
-          <div class="work card">
+          <div class="work fadeUp autoBlur">
             <img src="assets/social media pic.avif" alt="" />
             <div class="layer">
               <h3>Social LinkTree</h3>
@@ -250,7 +250,7 @@
               ></a>
             </div>
           </div>
-          <div class="work card">
+          <div class="work fadeUp autoBlur">
             <img src="assets/business pic.jpg" alt="" class="business"/>
             <div class="layer">
               <h3>Business Website</h3>
@@ -262,7 +262,7 @@
               ></a>
             </div>
           </div>
-          <div class="work card">
+          <div class="work fadeUp autoBlur">
             <img src="assets/music pic.jpeg" alt="" />
             <div class="layer">
               <h3>Music Web Clone</h3>
